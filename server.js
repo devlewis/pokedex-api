@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const morgan = require("morgan");
 const morganSetting = process.env.NODE_ENV === "production" ? "tiny" : "common";
 const cors = require("cors");
 const POKEDEX = require("./pokedex.json");
